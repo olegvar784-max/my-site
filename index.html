@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Олег Варнавский — визитка</title>
+  <meta name="description" content="Сайт-визитка студента группы К841 Варнавского О. В.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="top">
+    <span class="logo">О. Варнавский</span>
+    <nav>
+      <a href="#about">Обо мне</a>
+      <a href="#skills">Навыки</a>
+      <a href="#projects">Работы</a>
+      <a href="#contacts">Контакты</a>
+    </nav>
+    <button id="theme" class="theme-btn" type="button" aria-pressed="false">Тёмная тема</button>
+  </header>
+
+  <main>
+    <section class="hero">
+      <img src="img/avatar.svg" alt="Аватар: инициалы ОВ" width="160" height="160">
+      <div>
+        <h1>Олег Варнавский</h1>
+        <p class="lead">Студент группы К841, направление — разработка веб-приложений</p>
+      </div>
+    </section>
+
+    <section id="about" class="card">
+      <h2>Обо мне</h2>
+      <p>Учусь разрабатывать серверную и клиентскую часть веб-сервисов. В учебных проектах работаю
+        с Node.js, ASP.NET Core и PostgreSQL, настраиваю аутентификацию через JWT и OAuth 2.0
+        и автоматизирую сборку с помощью GitHub Actions.</p>
+    </section>
+
+    <section id="skills" class="card">
+      <h2>Навыки</h2>
+      <ul class="tags">
+        <li>HTML и CSS</li>
+        <li>JavaScript</li>
+        <li>Node.js, Express</li>
+        <li>C#, ASP.NET Core</li>
+        <li>PostgreSQL</li>
+        <li>JWT, OAuth 2.0</li>
+        <li>Git, GitHub Actions</li>
+      </ul>
+    </section>
+
+    <section id="projects" class="card">
+      <h2>Учебные работы</h2>
+      <div class="grid">
+        <article>
+          <h3>Бронь без конфликтов</h3>
+          <p>Сервис бронирования аудиторий без пересечений по времени.</p>
+        </article>
+        <article>
+          <h3>Вход через GitHub</h3>
+          <p>Авторизация по протоколу OAuth 2.0 в приложении ASP.NET Core.</p>
+        </article>
+        <article>
+          <h3>Web API на Node.js</h3>
+          <p>Регистрация, вход и разграничение ролей с помощью JWT.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="contacts" class="card">
+      <h2>Контакты</h2>
+      <p>Группа К841. Связаться со мной можно через страницу репозитория этого сайта на GitHub.</p>
+      <p>Вы посетили страницу <b id="visits">1</b> раз(а) в этом браузере.</p>
+    </section>
+  </main>
+
+  <footer class="foot">Сайт опубликован автоматически через GitHub Actions и GitHub Pages.</footer>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+{
+  "name": "my-site",
+  "version": "1.0.0",
+  "description": "Сайт-визитка Варнавского О. В. (К841) с CI/CD на GitHub Actions",
+  "private": true,
+  "scripts": {
+    "lint": "htmlhint '*.html'",
+    "test": "node test.js",
+    "build": "rm -rf dist && mkdir -p dist && cp -r index.html style.css script.js img dist/"
+  },
+  "devDependencies": {
+    "htmlhint": "^1.1.4"
+  }
+}
